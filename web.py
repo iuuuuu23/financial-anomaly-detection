@@ -41,7 +41,7 @@ def run_app():
             
         # Vẽ biểu đồ trực quan hóa dữ liệu
         st.markdown("---")
-        st.subheader("📉 Biểu đồ phân phối giao dịch")
+        st.subheader("📉 Biểu đồ phân phối các giao dịch")
         
         fig, ax = plt.subplots(figsize=(10, 4))
         sns.histplot(data=df_processed, x='Amount', hue='Status', multiple='stack', 
