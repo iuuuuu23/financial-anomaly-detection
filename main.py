@@ -8,7 +8,7 @@ def load_and_clean_data(file_path="data/financial_anomaly_data.csv"):
     return df
 
 def detect_anomalies(df, contamination_rate=0.05):
-    """Huấn luyện mô hình Isolation Forest để phát hiện giao dịch bất thường"""
+    """Huấn luyện mô hình Isolation Forest để phát hiện các giao dịch bất thường"""
     X = df[['Amount']].values
     
     # Khởi tạo mô hình học máy phát hiện phần tử ngoại lai
