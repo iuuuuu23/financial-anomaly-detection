@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.ensemble import IsolationForest
 
 def load_and_clean_data(file_path="data/financial_anomaly_data.csv"):
-    """Đọc dữ liệu sổ cái tài chính và chuẩn hóa thời gian"""
+    """Đọc dữ liệu sổ cái tài chính & chuẩn hóa thời gian"""
     df = pd.read_csv(file_path)
     df['Timestamp'] = pd.to_datetime(df['Timestamp'], errors='coerce')
     return df
