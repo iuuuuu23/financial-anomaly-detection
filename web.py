@@ -39,7 +39,7 @@ def run_app():
         else:
             st.dataframe(df_processed, use_container_width=True)
             
-        # Vẽ biểu đồ trực quan hóa dữ liệu
+        # Vẽ biểu đồ trực quan hóa các dữ liệu
         st.markdown("---")
         st.subheader("📉 Biểu đồ phân phối các giao dịch")
         
